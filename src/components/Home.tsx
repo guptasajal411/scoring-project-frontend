@@ -16,6 +16,6 @@ export default async function Home() {
         <div>
             current score: {match.match.innings.scoreDetails.runs} R / {match.match.innings.scoreDetails.wickets} W
         </div>
-        <Link href={`/match</div>${match.match._id}`}>Go to current match { }</Link>
+        <Link href={`/match/${match.match._id}`}>Go to current match { }</Link>
     </div>
 }
