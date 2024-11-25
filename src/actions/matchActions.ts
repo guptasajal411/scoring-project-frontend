@@ -1,8 +1,8 @@
 "use server"
 
-import 'server-only'
-import { API_URL } from '@/constants'
-import { redirect } from 'next/navigation';
+import "server-only"
+import { API_URL } from "@/constants"
+import { redirect } from "next/navigation";
 
 export async function startNewMatch() {
     const data = await fetch(`${API_URL}/match/new-match`, { method: "POST" });

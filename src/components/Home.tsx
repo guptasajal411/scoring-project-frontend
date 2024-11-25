@@ -2,7 +2,7 @@ import "server-only"
 import { API_URL } from "@/constants"
 import Link from "next/link"
 import { startNewMatch } from "@/actions/matchActions"
-import Form from 'next/form'
+import Form from "next/form"
 
 export default async function Home() {
     const data = await fetch(`${API_URL}/match`)
